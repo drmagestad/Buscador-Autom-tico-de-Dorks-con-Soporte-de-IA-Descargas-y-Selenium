@@ -103,3 +103,4 @@ class BrowserAutoSearch:
     def quit(self):
         """Cierra el navegador y finaliza la instancia del WebDriver."""
         self.browser.quit()
+
