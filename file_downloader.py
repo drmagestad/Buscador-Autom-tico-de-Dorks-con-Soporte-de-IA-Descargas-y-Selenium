@@ -58,3 +58,4 @@ class FileDownloader:
             for url in urls:
                 if any(url.endswith(f".{tipo}") for tipo in tipos_archivos):
                     self.descargar_archivo(url)
+
