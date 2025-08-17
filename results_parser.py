@@ -69,3 +69,4 @@ class ResultsProcessor:
             table.add_row("", "", "", "")  # Añade una fila vacía para separación visual
         
         console.print(table)
+
