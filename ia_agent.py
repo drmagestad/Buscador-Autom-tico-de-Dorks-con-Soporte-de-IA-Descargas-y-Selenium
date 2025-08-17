@@ -135,3 +135,4 @@ if __name__ == "__main__":
     openai_generator = OpenAIGenerator('gpt-4')
     ia_agent = IAagent(openai_generator)
     print(ia_agent.generate_gdork("Lista de usuarios y contraseñas en archivos sql y volcados de bases de datos. Busca por diferentes variaciones de la palabra password."))
+
