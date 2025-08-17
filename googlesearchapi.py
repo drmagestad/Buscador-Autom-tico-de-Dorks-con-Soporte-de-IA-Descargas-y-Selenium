@@ -77,3 +77,4 @@ class GoogleSearch:
             }
             custom_results.append(cresult)
         return custom_results
+
