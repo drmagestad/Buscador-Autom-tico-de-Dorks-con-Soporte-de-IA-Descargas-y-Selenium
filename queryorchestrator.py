@@ -37,14 +37,14 @@ def load_env(configure_env):
     # Cargar las variables de entorno
     load_dotenv()
 
+    # EXTRAER las variables ANTES de usarlas
+    google_api_key = os.getenv("API_KEY_GOOGLE")
+    search_engine_id = os.getenv("SEARCH_ENGINE_ID")
+
     # Verificar la disponibilidad de las claves de API
     if not google_api_key or not search_engine_id:
         print("ERROR: Falta la API_KEY o el SEARCH_ENGINE_ID. Por favor, ejecuta la opción --configure para configurar el archivo .env.")
         sys.exit(1)
-
-    # Extraer valores de las variables de entorno
-    google_api_key = os.getenv("API_KEY_GOOGLE")
-    search_engine_id = os.getenv("SEARCH_ENGINE_ID")
 
     return (google_api_key, search_engine_id)
 
@@ -153,4 +153,4 @@ if __name__ == "__main__":
          download=args.download,
          gen_dork=args.generate_dork,
          selenium=args.selenium)
-
+    
