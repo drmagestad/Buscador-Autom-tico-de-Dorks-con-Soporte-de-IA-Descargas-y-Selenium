@@ -1,0 +1,8 @@
+selenium
+webdriver-manager
+requests
+openai
+gpt4all
+googlesearch-python
+python-dotenv
+rich
